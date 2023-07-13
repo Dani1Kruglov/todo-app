@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -24,7 +24,7 @@
                 <a class="navbar-brand" href="{{route('tasks.index') }}">
                     {{ config('app.name', 'Laravel') }}
 
-                </a>Пароль для проверки:   7Ddf5VUgxF8uQc
+                </a>
                 @if(isset($list_name))
                 <form class="d-flex" role="search" method="post" action="{{route('list.find', $list_name->id)}}">
                     @csrf
@@ -113,7 +113,7 @@
                                     </ul>
                                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-top: 50px">
                                         @isset($availableLists)
-                                            <h4>Списки которые вам доступны:</h4>
+                                            <h4>Списки которыми вы можете поделиться:</h4>
                                             <div style="margin-left: 20px">
                                                 @foreach($availableLists as $availableList)
                                                     <div>

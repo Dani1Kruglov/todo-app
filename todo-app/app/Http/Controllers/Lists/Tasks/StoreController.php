@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Http\Controllers\Lists\Tasks;
+namespace App\Http\Controllers\Lists\Tasks;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Tasks\StoreRequest;
@@ -21,6 +21,7 @@ class StoreController extends Controller
         else{
             $path = 'null';
         }
+
         //остальная работа
         $data = $request -> validated();
         $tags = explode("#", $data['tags']);

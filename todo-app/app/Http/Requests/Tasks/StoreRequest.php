@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Http\Requests\Tasks;
+namespace App\Http\Requests\Tasks;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -23,7 +23,6 @@ class StoreRequest extends FormRequest
     {
         return [
             'body' => 'string',
-            'image' => 'image',
             'list_id' => 'integer',
             'tags'=>'string'
         ];
